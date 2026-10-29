@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  recommendation-service:
+    build:
+      context: ./recommendation-service
+      dockerfile: Dockerfile
+    container_name: newssphere-recommendation-service
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - RECOMMENDATION_HOST=0.0.0.0
+      - RECOMMENDATION_PORT=8000
+      - WEIGHT_CATEGORY=0.35
+      - WEIGHT_BEHAVIOR=0.30
+      - WEIGHT_SIMILARITY=0.20
+      - WEIGHT_RECENCY=0.15
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: newssphere-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_APP_MODE=demo
+      - VITE_RECOMMENDATION_SERVICE_URL=http://recommendation-service:8000
+    depends_on:
+      - recommendation-service

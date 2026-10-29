@@ -1,0 +1,158 @@
+{
+  "demoUsers": [
+    {
+      "id": "demo-user-a",
+      "email": "aarav.demo@newssphere.io",
+      "displayName": "Aarav Sharma",
+      "role": "AI & Tech Enthusiast",
+      "avatarUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80",
+      "selectedInterests": [
+        "Artificial Intelligence",
+        "Technology",
+        "Science",
+        "Space"
+      ],
+      "learnedScores": {
+        "Artificial Intelligence": 0.85,
+        "Technology": 0.70,
+        "Science": 0.50,
+        "Cybersecurity": 0.40
+      },
+      "bookmarks": [
+        "art-ai-01",
+        "art-tech-01"
+      ],
+      "readingHistory": [
+        {
+          "articleId": "art-ai-01",
+          "viewCount": 3,
+          "lastViewedAt": "2026-10-26T17:30:00Z"
+        },
+        {
+          "articleId": "art-ai-02",
+          "viewCount": 2,
+          "lastViewedAt": "2026-10-26T16:15:00Z"
+        },
+        {
+          "articleId": "art-tech-01",
+          "viewCount": 1,
+          "lastViewedAt": "2026-10-26T15:00:00Z"
+        },
+        {
+          "articleId": "art-spc-01",
+          "viewCount": 1,
+          "lastViewedAt": "2026-10-26T14:10:00Z"
+        }
+      ],
+      "interactions": [
+        {
+          "articleId": "art-ai-01",
+          "type": "like",
+          "readingDuration": 120
+        },
+        {
+          "articleId": "art-ai-01",
+          "type": "bookmark",
+          "readingDuration": 120
+        },
+        {
+          "articleId": "art-ai-02",
+          "type": "read",
+          "readingDuration": 95
+        },
+        {
+          "articleId": "art-tech-01",
+          "type": "bookmark",
+          "readingDuration": 110
+        },
+        {
+          "articleId": "art-spc-01",
+          "type": "open",
+          "readingDuration": 40
+        }
+      ],
+      "settings": {
+        "theme": "light",
+        "personalizationEnabled": true,
+        "diversityLevel": 0.20
+      }
+    },
+    {
+      "id": "demo-user-b",
+      "email": "priya.demo@newssphere.io",
+      "displayName": "Priya Patel",
+      "role": "Sports & Business Executive",
+      "avatarUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
+      "selectedInterests": [
+        "Cricket",
+        "Sports",
+        "Business",
+        "Startups"
+      ],
+      "learnedScores": {
+        "Cricket": 0.90,
+        "Sports": 0.75,
+        "Business": 0.65,
+        "India News": 0.35
+      },
+      "bookmarks": [
+        "art-cric-01",
+        "art-biz-01"
+      ],
+      "readingHistory": [
+        {
+          "articleId": "art-cric-01",
+          "viewCount": 4,
+          "lastViewedAt": "2026-10-26T17:45:00Z"
+        },
+        {
+          "articleId": "art-cric-02",
+          "viewCount": 2,
+          "lastViewedAt": "2026-10-26T16:30:00Z"
+        },
+        {
+          "articleId": "art-biz-01",
+          "viewCount": 2,
+          "lastViewedAt": "2026-10-26T15:20:00Z"
+        },
+        {
+          "articleId": "art-stu-01",
+          "viewCount": 1,
+          "lastViewedAt": "2026-10-26T14:40:00Z"
+        }
+      ],
+      "interactions": [
+        {
+          "articleId": "art-cric-01",
+          "type": "like",
+          "readingDuration": 150
+        },
+        {
+          "articleId": "art-cric-01",
+          "type": "bookmark",
+          "readingDuration": 150
+        },
+        {
+          "articleId": "art-biz-01",
+          "type": "bookmark",
+          "readingDuration": 85
+        },
+        {
+          "articleId": "art-cric-02",
+          "type": "read",
+          "readingDuration": 70
+        },
+        {
+          "articleId": "art-stu-01",
+          "type": "open",
+          "readingDuration": 45
+        }
+      ],
+      "settings": {
+        "theme": "light",
+        "personalizationEnabled": true,
+        "diversityLevel": 0.25
+      }
+    }
+  ]
+}
